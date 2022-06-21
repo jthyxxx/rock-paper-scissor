@@ -3,7 +3,7 @@ let computerPlay = () => {
     return random[Math.floor(Math.random()*3)]
 }
 
-let playGroud = (playerSelection, computerSelection) => {
+let playGround = (playerSelection, computerSelection) => {
     if(playerSelection.toLowerCase() == "scissor" && computerSelection == "paper"){
         return `${playerSelection.toLowerCase()} beats ${computerSelection}. You win!!!`
     }else if(playerSelection.toLowerCase() == "paper" && computerSelection == "rock"){
