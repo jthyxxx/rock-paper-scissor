@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@700&display=swap');
 
 body{
-    background: url(https://static.vecteezy.com/system/resources/previews/001/987/871/original/abstract-black-stripes-diagonal-background-free-vector.jpg);
+    background: url(https://i.pinimg.com/originals/01/5a/17/015a1757e67f766a12621af543b3a5fd.jpg);
 }
 
 #container{
@@ -19,21 +19,17 @@ h1{
 }
 
 .computer{
-    height: 160px;
-    width: 160px;
+    height: 100px;
+    width: 250px;
     background-color: rgb(199, 199, 199);
-    border-radius: 50%;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px;
     border: 5px solid red;
-}
-
-.qmark{
-    font-size: 10rem;
-    color: black;
-    font-weight: bold;
+    font-size: 4em;
+    font-family: 'Potta One', cursive;
 }
 
 .versus{
