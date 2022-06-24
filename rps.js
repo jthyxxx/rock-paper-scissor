@@ -1,4 +1,4 @@
-let computerPlay = () => {
+/* let computerPlay = () => {
     let random = ['rock','paper','scissor'];
     return random[Math.floor(Math.random()*3)];
 }
@@ -38,4 +38,10 @@ let game = () => {
     user > computer? console.log("You win the game"): console.log("Computer win the game")
 }
 
-game()
+game() */
+
+const rock = document.querySelector('rock')
+
+function al(){
+    alert("Hello World")
+}

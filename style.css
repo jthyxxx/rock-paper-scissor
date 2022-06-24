@@ -1,0 +1,57 @@
+body{
+    background: url(https://static.vecteezy.com/system/resources/previews/001/987/871/original/abstract-black-stripes-diagonal-background-free-vector.jpg);
+}
+
+#container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: azure;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.computer{
+    height: 195px;
+    width: 195px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.qmark{
+    font-size: 10rem;
+    color: black;
+    font-weight: bold;
+}
+
+.versus{
+    font-size: 10rem;
+    color: red;
+    font-family: ;
+}
+
+button{
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+}
+
+.player{
+    display: flex;
+    gap: 50px;
+}
+
+
+.rock,.paper,.scissor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
