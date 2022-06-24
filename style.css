@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@700&display=swap');
+
 body{
     background: url(https://static.vecteezy.com/system/resources/previews/001/987/871/original/abstract-black-stripes-diagonal-background-free-vector.jpg);
 }
 
 #container{
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,17 +15,19 @@ h1{
     color: azure;
     text-align: center;
     font-size: 3rem;
+    font-family: 'Potta One', cursive;
 }
 
 .computer{
-    height: 195px;
-    width: 195px;
+    height: 160px;
+    width: 160px;
     background-color: rgb(199, 199, 199);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px;
+    border: 5px solid red;
 }
 
 .qmark{
@@ -35,13 +39,21 @@ h1{
 .versus{
     font-size: 10rem;
     color: red;
-    font-family: ;
+    font-family: 'Potta One', cursive;
 }
 
-button{
+.player>button{
     height: 175px;
     width: 175px;
     border-radius: 50%;
+    background-color: blue;
+    border: none;
+}
+
+
+img{
+    height: 175px;
+    width: 175px;
 }
 
 .player{
@@ -50,8 +62,18 @@ button{
 }
 
 
-.rock,.paper,.scissor{
+#rock,#paper,#scissor{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.startButton{
+    margin-top: 50px;
+    height: 100px;
+    width: 200px;
+    border-radius: 12px;
+    border: none;
+    font-size: 3rem;
+    font-family: 'Potta One', cursive;
 }

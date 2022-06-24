@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissor</title>
     <link rel="icon" type="image/x-icon" href="favicon.png?v=2" />
-    <script src="rps.js"></script>
+    <script src="rps.js" async></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -15,10 +15,11 @@
       <div class="computer"><div class="qmark">?</div></div>
       <div class="versus">VS</div>
       <div class="player">
-        <button class="rock" onclick="al()"><img src="rock.png"></button>
-        <button class="paper"><img src="paper.png"></button>
-        <button class="scissor"><img src="scissor.png"></button>
+        <button id="rock" class="choices"><img src="rock.png"></button>
+        <button id="paper" class="choices"><img src="paper.png"></button>
+        <button id="scissor" class="choices"><img src="scissor.png"></button>
       </div>
+      <button class="startButton" onclick="choose()">Play</button>
     </div>
   </body>
 </html>
