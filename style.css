@@ -73,3 +73,30 @@ img{
     font-size: 3rem;
     font-family: 'Potta One', cursive;
 }
+
+.scores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.playerScore{
+    color: blue;
+}
+
+.computerScore{
+    color: red;
+}
+
+.playerScore, .computerScore{
+    height: 100px;
+    background-color: azure;
+    width: 200px;
+    margin-top: 50px;
+    border-radius: 12px;
+    font-size: 3rem;
+    font-family: 'Potta One', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -10,10 +10,31 @@ let computerPlay = () => {
   return random[Math.floor(Math.random() * 3)];
 };
 
+let playerScore = 0;
+let computerScore = 0;
+
 let player = () => {
     buttons.forEach((button) => {
         button.addEventListener("click", () => {
             startGame(button.id,computerPlay())
+            if(playerScore == 5 || computerScore == 5){
+                buttons.forEach((button) => {
+                    button.disabled = true
+                })
+                if(playerScore == 5){
+                    h1.innerText = 'You win the round'
+                }else{
+                    h1.innerText = 'Computer win the round'
+                }
+                startButton.disabled = false
+                    computerScore = 0
+                    playerScore = 0
+                    document.querySelector('.playerScore').innerText = 0
+                    document.querySelector('.computerScore').innerText = 0
+                    buttons.forEach((button) => {
+                        button.disabled = false
+                    })
+            }
         });
     });
 };
@@ -22,36 +43,38 @@ let player = () => {
 
 let startGame = (playerSelection, computerSelection) => {
     if (playerSelection === 'rock' && computerSelection === 'scissor') {
+        playerScore++;
+        document.querySelector('.playerScore').innerText = playerScore
         computer.innerText = computerSelection
         h1.innerText = 'You Win'
-        startButton.innerText = 'Play Again'
-        startButton.style.width = '300px'
     }else if(playerSelection === 'paper' && computerSelection === 'rock'){
+        playerScore++;
+        document.querySelector('.playerScore').innerText = playerScore
         computer.innerText = computerSelection
         h1.innerText = 'You Win'
-        startButton.innerText = 'Play Again'
-        startButton.style.width = '300px'
     }else if(playerSelection === 'scissor' && computerSelection == 'paper'){
+        playerScore++;
+        document.querySelector('.playerScore').innerText = playerScore
         computer.innerText = computerSelection
         h1.innerText = 'You Win'
-        startButton.innerText = 'Play Again'
-        startButton.style.width = '300px'
     }else if(playerSelection === computerSelection){
         computer.innerText = computerSelection
         h1.innerText = 'Draw'
-        startButton.innerText = 'Play Again'
-        startButton.style.width = '300px'
     }else{
+        computerScore++;
+        document.querySelector('.computerScore').innerText = computerScore
         computer.innerText = computerSelection
         h1.innerText = 'You Lose'
-        startButton.innerText = 'Play Again'
-        startButton.style.width = '300px'
+        
     }
 }
 
 let game = () => {
-    computer.innerText = '?'
+    startButton.disabled = true
+    computer.innerText = 'Bot'
     document.querySelector("h1").innerText = "Choose your weapon";
+    startButton.innerText = 'Battling'
+    startButton.style.width = '300px'
     player();
 }
 

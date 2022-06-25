@@ -12,14 +12,18 @@
   <body>
     <div id="container">
       <div><h1>Rock Paper Scissor</h1></div>
-      <div class="computer">?</div>
+      <div class="computer">Bot</div>
       <div class="versus">VS</div>
       <div class="player">
-        <button id="rock" class="choices"><img src="rock.png"></button>
-        <button id="paper" class="choices"><img src="paper.png"></button>
-        <button id="scissor" class="choices"><img src="scissor.png"></button>
+        <button id="rock" class="choices"><img src="rock.png" /></button>
+        <button id="paper" class="choices"><img src="paper.png" /></button>
+        <button id="scissor" class="choices"><img src="scissor.png" /></button>
       </div>
-      <button class="startButton" onclick="choose()">Play</button>
+      <div class="scores">
+        <div class="playerScore">0</div>
+        <button class="startButton" onclick="choose()">Play</button>
+        <div class="computerScore">0</div>
+      </div>
     </div>
   </body>
 </html>
