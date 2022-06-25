@@ -26,14 +26,8 @@ let player = () => {
                 }else{
                     h1.innerText = 'Computer win the round'
                 }
-                startButton.disabled = false
-                    computerScore = 0
-                    playerScore = 0
-                    document.querySelector('.playerScore').innerText = 0
-                    document.querySelector('.computerScore').innerText = 0
-                    buttons.forEach((button) => {
-                        button.disabled = false
-                    })
+                startButton.disabled = true
+                startButton.innerText = 'Reload'
             }
         });
     });
